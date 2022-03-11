@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Scanner;
 
 public class line {
@@ -39,10 +40,6 @@ public class line {
         line2 = Math.sqrt((a2-a1)^2 + (b2-b1)^2);
         System.out.println("Length of the line2 is :" + line2);
 
-        if (line1 == line2)
-            System.out.println("line are equal");
-        else
-            System.out.println("line are not equal");
-
+        System.out.println(Objects.equals(line1, line2));
     }
 }
