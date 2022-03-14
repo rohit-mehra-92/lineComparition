@@ -1,7 +1,9 @@
+package main;
+
 import java.util.Objects;
 import java.util.Scanner;
 
-public class line {
+public class Main {
     public static void main(String[] args) {
 
         double x1, y1, x2, y2;
@@ -21,7 +23,6 @@ public class line {
         y2 = num.nextDouble();
 
         line1 = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
-        System.out.println("Length of the line1 is :" + line1);
 
         double a1,b1,a2,b2;
         Double line2;
@@ -38,6 +39,8 @@ public class line {
         b2 = num.nextDouble();
 
         line2 = Math.sqrt((a2-a1)*(a2-a1) + (b2-b1)*(b2-b1));
+
+        System.out.println("Length of the line1 is :" + line1);
         System.out.println("Length of the line2 is :" + line2);
 
 
